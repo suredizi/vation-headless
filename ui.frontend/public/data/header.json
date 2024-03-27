@@ -1,0 +1,58 @@
+{
+    "headerItems":[
+        {
+            "logoImage": "https://vation.com/wp-content/uploads/2024/02/vation.svg",
+            "hamburgerIcon":"https://img.icons8.com/?size=256&id=59832&format=png",
+            "closeIcon":"https://img.icons8.com/?size=256&id=46&format=png"
+        }
+    ],
+    "menu": [
+      {
+        "id": 1,
+        "label": "Level 1 Menu Item 1",
+        "url": "/level1/item1",
+        "submenu": [
+          {
+            "id": 11,
+            "label": "Level 2 Menu Item 1",
+            "url": "/level2/item1",
+            "submenu": [
+              {
+                "id": 111,
+                "label": "Level 3 Menu Item 1",
+                "url": "/level3/item1"
+              },
+              {
+                "id": 112,
+                "label": "Level 3 Menu Item 2",
+                "url": "/level3/item2"
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "label": "Level 2 Menu Item 2",
+            "url": "/level2/item2"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Level 1 Menu Item 2",
+        "url": "/level1/item2"
+      },
+      {
+        "id": 3,
+        "label": "Level 1 Menu Item 3",
+        "url": "/level1/item3",
+        "submenu": [
+          {
+            "id": 31,
+            "label": "Level 2 Menu Item 3",
+            "url": "/level2/item3"
+          }
+        ]
+      }
+    ]
+  }
+  
