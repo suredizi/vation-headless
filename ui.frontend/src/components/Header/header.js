@@ -12,23 +12,23 @@ const Header = () => {
   const [headerItems, setHeaderItems] = useState([]);
 
   useEffect(() => {
-    // const fetchHeaderData = async () => {
-    //   try {
-    //     const response = await fetch('/data/header.json');
-    //     const data = await response.json();
-    //     if (data) {
-    //       setHeaderItems(data['jcr:content']['root']);
-    //     }
-    //   } catch (error) {
-    //     console.error('Error fetching data:', error);
-    //   }
-    // };
-
-    // fetchHeaderData();
+    fetchHeaderData();
   }, []);
 
+  const fetchHeaderData = async () => {
+    try {
+      const response = await fetch('/data/header.json');
+      const data = await response.json();
+      if (data) {
+        setHeaderItems(data['jcr:content']['root']);
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
   return (
-    <div className="container-fluid">
+    <div className="container-fluid with-header">
         <div className='container'>
           <header>
             <div className="logo-image">

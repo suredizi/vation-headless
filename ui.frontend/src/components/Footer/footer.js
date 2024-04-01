@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid with-footer">
       <div className='container'>
         <footer>
           <ul>

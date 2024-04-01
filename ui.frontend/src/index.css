@@ -48,6 +48,8 @@ p,
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+.container-fluid.with-header, .container-fluid.with-footer {
   background-color: #000;
 }
 .container {
