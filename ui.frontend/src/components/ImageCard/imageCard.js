@@ -1,8 +1,8 @@
 //Header.js
 import React, { useState, useEffect, Component } from 'react';
-require('./stackbanner.css')
+require('./imageCard.css')
 
-const StackBanner = () => {
+const ImageCard = () => {
 
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const StackBanner = () => {
     return (
         <div className="container-fluid">
             <div className='container'>
-                <section className='stackbanner'>
+                <section className='imagecard'>
                     <div class="card-container">
                         <div class="card">
                             <img src='https://lh3.googleusercontent.com/SzQYUObnbDy0Vh_3R9JCJaFqslkNkOC61vJ0sS8rH0SBqcx6z3yHatJF8W6lxe6Xz1bKH0w8D49FlQ18W38FVALAjijIQyXAv92Af_U=w1064-v0' />
@@ -37,4 +37,4 @@ const StackBanner = () => {
     );
 };
 
-export default StackBanner;
+export default ImageCard;
