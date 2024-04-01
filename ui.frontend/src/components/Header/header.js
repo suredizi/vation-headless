@@ -12,19 +12,19 @@ const Header = () => {
   const [headerItems, setHeaderItems] = useState([]);
 
   useEffect(() => {
-    const fetchHeaderData = async () => {
-      try {
-        const response = await fetch('/data/header.json');
-        const data = await response.json();
-        if (data) {
-          setHeaderItems(data.headerItems);
-        }
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+    // const fetchHeaderData = async () => {
+    //   try {
+    //     const response = await fetch('/data/header.json');
+    //     const data = await response.json();
+    //     if (data) {
+    //       setHeaderItems(data['jcr:content']['root']);
+    //     }
+    //   } catch (error) {
+    //     console.error('Error fetching data:', error);
+    //   }
+    // };
 
-    fetchHeaderData();
+    // fetchHeaderData();
   }, []);
 
   return (
@@ -32,19 +32,19 @@ const Header = () => {
         <div className='container'>
           <header>
             <div className="logo-image">
-            {headerItems.map((item, index) => (
-              <img key={index} src={item.logoImage} alt="Logo" />
-            ))}
+            {/* {headerItems.map((item, index) => ( */}
+              <img src="" alt="Logo" />
+            {/* ))} */}
             </div>
             <div class="menu-bar" id="openModalBtn">
             <div class="menu-icon">
-            {headerItems.map((item, index) => (
-              <img key={index} src={item.hamburgerIcon} onClick={toggleMenu} alt="Logo" />
-            ))}
+            {/* {headerItems.map((item, index) => ( */}
+              <img src="" onClick={toggleMenu} alt="Logo" />
+            {/* ))} */}
               <img src="images/close.png" alt="" class="close" />
             </div>
             </div>
-            {isModalOpen && (
+            {/* {isModalOpen && ( */}
           <div id="modalMenu" class="modalMenu">
           <div class="modal-content">
             <span class="close" id="closeModalBtn">&times;</span>
@@ -195,7 +195,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        )}
+        {/* )} */}
             <div class="search">
             <input type="search" placeholder="What are you looking for?" id="inputField" oninput="handleInput()"/>
             <i class="fa fa-search" id="icon"></i>

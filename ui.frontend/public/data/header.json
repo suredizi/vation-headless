@@ -1,58 +1,367 @@
 {
-    "headerItems":[
-        {
-            "logoImage": "https://vation.com/wp-content/uploads/2024/02/vation.svg",
-            "hamburgerIcon":"https://img.icons8.com/?size=256&id=59832&format=png",
-            "closeIcon":"https://img.icons8.com/?size=256&id=46&format=png"
-        }
-    ],
-    "menu": [
-      {
-        "id": 1,
-        "label": "Level 1 Menu Item 1",
-        "url": "/level1/item1",
-        "submenu": [
-          {
-            "id": 11,
-            "label": "Level 2 Menu Item 1",
-            "url": "/level2/item1",
-            "submenu": [
-              {
-                "id": 111,
-                "label": "Level 3 Menu Item 1",
-                "url": "/level3/item1"
-              },
-              {
-                "id": 112,
-                "label": "Level 3 Menu Item 2",
-                "url": "/level3/item2"
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Mar 27 2024 13:22:37 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Vation Headless Home Page",
+    "cq:template": "/conf/vation-headless/settings/wcm/templates/spa-page-template",
+    "jcr:created": "Wed Mar 27 2024 13:22:37 GMT+0530",
+    "cq:lastModified": "Thu Mar 28 2024 15:24:04 GMT+0530",
+    "sling:resourceType": "vation-headless/components/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "header_30732782": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Wed Mar 27 2024 15:33:15 GMT+0530",
+          "mainHeading": "Shop by Category",
+          "jcr:lastModified": "Thu Mar 28 2024 15:22:40 GMT+0530",
+          "sling:resourceType": "vation-headless/components/header",
+          "menuIconItems": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "headingIcon": "/content/dam/vation-headless/pocimages/crown.png",
+              "heading": "Exclusive At Croma",
+              "headingNavigationUrl": "https://www.croma.com/croma-store/b/b-0082"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "headingIcon": "/content/dam/vation-headless/pocimages/award.png",
+              "heading": "Top Brands",
+              "subtitles": {
+                "jcr:primaryType": "nt:unstructured",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "All Top Brands",
+                  "subheadingNavigationUrl": "https://www.croma.com/searchB?q=Top%20Brands%3Arelevance&text=Top%20Brands"
+                },
+                "item1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "Amazon",
+                  "subheadingNavigationUrl": "https://www.croma.com/amazon-store/b/b-0683"
+                },
+                "item2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "Atomberg",
+                  "subheadingNavigationUrl": "<a class=\"tablinks link\" href=\"/atomberg-store/b/b-1169\"><h5 class=\"text l1-sublist-item\" style=\"width: 30rem;\">Atomberg</h5></a>"
+                },
+                "item3": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "Apple",
+                  "subheadingNavigationUrl": "https://www.croma.com/apple-store/b/b-0025"
+                },
+                "item4": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Bajaj",
+                  "subheadingNavigationUrl": "https://www.croma.com/bajaj-store/b/b-0037"
+                },
+                "item5": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "Blue Star",
+                  "subheadingNavigationUrl": "https://www.croma.com/bluestar-store/b/b-0587"
+                },
+                "item6": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "Boat",
+                  "subheadingNavigationUrl": "https://www.croma.com/boat-store/b/b-0769"
+                },
+                "item7": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "Bosch",
+                  "subheadingNavigationUrl": "https://www.croma.com/bosch-store/b/b-0609"
+                },
+                "item8": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Bose",
+                  "subheadingNavigationUrl": "<a class=\"tablinks link\" href=\"/bose-store/b/b-0053\"><h5 class=\"text l1-sublist-item\" style=\"width: 30rem;\">Bose</h5></a>"
+                },
+                "item9": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Canon",
+                  "subheadingNavigationUrl": "https://www.croma.com/canon-store/b/b-0068"
+                },
+                "item10": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Croma",
+                  "subheadingNavigationUrl": "https://www.croma.com/croma-store/b/b-0082"
+                },
+                "item11": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Daikin",
+                  "subheadingNavigationUrl": "https://www.croma.com/daikin-store/b/b-0826"
+                },
+                "item12": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Dell",
+                  "subheadingNavigationUrl": "https://www.croma.com/dell-store/b/b-0086"
+                },
+                "item13": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Dyson",
+                  "subheadingNavigationUrl": "https://www.croma.com/dyson-store/b/b-1023"
+                },
+                "item14": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Elica",
+                  "subheadingNavigationUrl": "https://www.croma.com/elica-store/b/b-0629"
+                },
+                "item15": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Faber",
+                  "subheadingNavigationUrl": "https://www.croma.com/faber-store/b/b-0119"
+                },
+                "item16": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Haier",
+                  "subheadingNavigationUrl": "https://www.croma.com/haier-store/b/b-0151"
+                },
+                "item17": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Havells",
+                  "subheadingNavigationUrl": "https://www.croma.com/havells-store/b/b-0717"
+                },
+                "item18": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Hitachi",
+                  "subheadingNavigationUrl": "https://www.croma.com/hitachi-store/b/b-0159"
+                },
+                "item19": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Hisense",
+                  "subheadingNavigationUrl": "https://www.croma.com/hisense-store/b/b-1198"
+                },
+                "item20": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-HP",
+                  "subheadingNavigationUrl": "https://www.croma.com/hp-store/b/b-0161"
+                },
+                "item21": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Hyperice",
+                  "subheadingNavigationUrl": "https://www.croma.com/hyperice-store/b/b-1225"
+                },
+                "item22": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-IFB",
+                  "subheadingNavigationUrl": "https://www.croma.com/ifb-store/b/b-0174"
+                },
+                "item23": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-JBL",
+                  "subheadingNavigationUrl": "https://www.croma.com/jbl-store/b/b-0196"
+                },
+                "item24": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Lenovo",
+                  "subheadingNavigationUrl": "https://www.croma.com/lenovo-store/b/b-0216"
+                },
+                "item25": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-LG",
+                  "subheadingNavigationUrl": "https://www.croma.com/lg-store/b/b-0219"
+                },
+                "item26": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Logitech",
+                  "subheadingNavigationUrl": "https://www.croma.com/logitech-store/b/b-0223"
+                },
+                "item27": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Marshall",
+                  "subheadingNavigationUrl": "https://www.croma.com/marshall-store/b/b-0777"
+                },
+                "item28": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Nikon",
+                  "subheadingNavigationUrl": "https://www.croma.com/nikon-store/b/b-0264"
+                },
+                "item29": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Nokia",
+                  "subheadingNavigationUrl": "https://www.croma.com/nokia-store/b/b-0267"
+                },
+                "item30": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-OnePlus",
+                  "subheadingNavigationUrl": "https://www.croma.com/oneplus-store/b/b-0948"
+                },
+                "item31": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Oppo",
+                  "subheadingNavigationUrl": "https://www.croma.com/oppo-store/b/b-0771"
+                },
+                "item32": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Panasonic",
+                  "subheadingNavigationUrl": "https://www.croma.com/panasonic-store/b/b-0285"
+                },
+                "item33": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Philips",
+                  "subheadingNavigationUrl": "https://www.croma.com/philips-store/b/b-0295"
+                },
+                "item34": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Realme",
+                  "subheadingNavigationUrl": "https://www.croma.com/realme-store/b/b-1090"
+                },
+                "item35": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Vivo",
+                  "subheadingNavigationUrl": "https://www.croma.com/vivo-store/b/b-0795"
+                },
+                "item36": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Samsung",
+                  "subheadingNavigationUrl": "https://www.croma.com/samsung-store/b/b-0328"
+                },
+                "item37": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Skullcandy",
+                  "subheadingNavigationUrl": "https://www.croma.com/skullcandy-store/b/b-0651"
+                },
+                "item38": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Sony",
+                  "subheadingNavigationUrl": "https://www.croma.com/sony-store/b/b-0346"
+                },
+                "item39": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Swiss Military",
+                  "subheadingNavigationUrl": "https://www.croma.com/swiss-military-store/b/b-0972"
+                },
+                "item40": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-TCL",
+                  "subheadingNavigationUrl": "https://www.croma.com/tcl-store/b/b-0365"
+                },
+                "item41": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Voltas",
+                  "subheadingNavigationUrl": "https://www.croma.com/voltas-store/b/b-0402"
+                },
+                "item42": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "category-Xiaomi",
+                  "subheadingNavigationUrl": "https://www.croma.com/xiaomi-store/b/b-0925"
+                }
               }
-            ]
+            },
+            "item2": {
+              "jcr:primaryType": "nt:unstructured",
+              "headingIcon": "/content/dam/vation-headless/pocimages/store.png",
+              "heading": "Croma Store Locator",
+              "headingNavigationUrl": "https://www.croma.com/store?location=default"
+            },
+            "item3": {
+              "jcr:primaryType": "nt:unstructured",
+              "headingIcon": "/content/dam/vation-headless/pocimages/gift-card.png",
+              "heading": "Gift Card",
+              "headingNavigationUrl": "https://www.croma.com/giftcard"
+            }
           },
-          {
-            "id": 12,
-            "label": "Level 2 Menu Item 2",
-            "url": "/level2/item2"
+          "menuItems": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "heading": "Televisions & Accessories",
+              "headingNavigationUrl": "https://www.croma.com/televisions-accessories/c/997",
+              "subHeading": {
+                "jcr:primaryType": "nt:unstructured",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "Televisions & Accessories",
+                  "subHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/c/997"
+                },
+                "item1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "subHeading": "LED TVs",
+                  "subHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/c/392",
+                  "nestedSubHeadings": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/home-appliances/washing-machines-dryers/c/48",
+                      "nestedSubHeading": "All LED TVs"
+                    },
+                    "item1": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/qled-tvs/c/897",
+                      "nestedSubHeading": "QLED TVs"
+                    },
+                    "item2": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/oled-tvs/c/1000",
+                      "nestedSubHeading": "OLED TVs"
+                    },
+                    "item3": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/4k-ultra-hd-tvs/c/999",
+                      "nestedSubHeading": "4K Ultra HD TVs"
+                    },
+                    "item4": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/8k-ultra-hd-tvs/c/6",
+                      "nestedSubHeading": "8K Ultra HD TVs"
+                    },
+                    "item5": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/smart-tvs/c/998",
+                      "nestedSubHeading": "Smart TVs"
+                    },
+                    "item6": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/full-hd-tvs/c/739",
+                      "nestedSubHeading": "Full HD TVs"
+                    },
+                    "item7": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "<a class=\"tablinks link L2links\" href=\"/televisions-accessories/led-tvs/hd-ready-tvs/c/297\"><h6 class=\"text l2-sublist\">HD Ready TVs</h6></a>",
+                      "nestedSubHeading": "HD Ready TVs"
+                    },
+                    "item8": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/android-smart-tvs/c/797",
+                      "nestedSubHeading": "Android Smart TVs"
+                    },
+                    "item9": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/large-screen-tvs/c/34",
+                      "nestedSubHeading": "Large Screen TVs"
+                    },
+                    "item10": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/medium-screen-tvs/c/871",
+                      "nestedSubHeading": "Medium Screen TVs"
+                    },
+                    "item11": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions-accessories/led-tvs/small-screen-tvs/c/1041",
+                      "nestedSubHeading": "Small Screen TVs"
+                    },
+                    "item12": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "nestedSubHeadingNavigationUrl": "https://www.croma.com/televisions/led-tvs/c/392?q=%3Arelevance%3AskuStockFlag%3Atrue%3Abrand%3ACroma&text=",
+                      "nestedSubHeading": "Croma LED TVs"
+                    }
+                  }
+                }
+              }
+            }
           }
-        ]
-      },
-      {
-        "id": 2,
-        "label": "Level 1 Menu Item 2",
-        "url": "/level1/item2"
-      },
-      {
-        "id": 3,
-        "label": "Level 1 Menu Item 3",
-        "url": "/level1/item3",
-        "submenu": [
-          {
-            "id": 31,
-            "label": "Level 2 Menu Item 3",
-            "url": "/level2/item3"
-          }
-        ]
+        },
+        "headericons": {},
+        "headericons_1288424862": {}
       }
-    ]
+    }
   }
-  
+}

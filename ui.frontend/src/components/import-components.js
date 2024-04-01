@@ -47,13 +47,17 @@ import {
     ListV2,ListV2IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
 
+
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
+// const Header = withAsyncImport(() => import(`./Header/header`));
+
 
 //lazyload / code splitting examples of external components
 const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-base/dist/authoring/title/v2/TitleV2`));
 const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-react-spa/dist/container/carousel/v1/CarouselV1`));
-
+// Custom Compoenents
+// const HeaderComponent = withAsyncImport(() => import(`./Header/header`));
 
 MapTo('vation-headless/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
 MapTo('vation-headless/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
@@ -90,5 +94,13 @@ const TextEditConfig = {
         return !props || !props.text || props.text.trim().length < 1;
     }
 };
+// const HeaderEditConfig = {
+//     emptyLabel: 'Header',
+
+//     isEmpty: function (props) {
+//         return !props || !props.text || props.text.trim().length < 1;
+//     }
+// };
 
 MapTo('vation-headless/components/text')(LazyTextComponent, TextEditConfig);
+// MapTo('vation-headless/components/Header')(Header, HeaderEditConfig);
