@@ -50,7 +50,7 @@ import {
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
-// const Header = withAsyncImport(() => import(`./Header/header`));
+const Header = withAsyncImport(() => import(`./Header/header`));
 
 
 //lazyload / code splitting examples of external components
@@ -94,13 +94,13 @@ const TextEditConfig = {
         return !props || !props.text || props.text.trim().length < 1;
     }
 };
-// const HeaderEditConfig = {
-//     emptyLabel: 'Header',
+const HeaderEditConfig = {
+    emptyLabel: 'Header',
 
-//     isEmpty: function (props) {
-//         return !props || !props.text || props.text.trim().length < 1;
-//     }
-// };
+    isEmpty: function (props) {
+        return !props || !props.text || props.text.trim().length < 1;
+    }
+};
 
 MapTo('vation-headless/components/text')(LazyTextComponent, TextEditConfig);
-// MapTo('vation-headless/components/Header')(Header, HeaderEditConfig);
+MapTo('vation-headless/components/Header')(Header, HeaderEditConfig);
