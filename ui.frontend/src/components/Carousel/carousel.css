@@ -1,0 +1,36 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    background: #191919;
+  }
+  
+  .carousel-container .card-container {
+    display: flex;
+    overflow-x: hidden;
+  }
+  
+  .carousel-container .card {
+    width: 23%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    border: none;
+  }
+  .carousel-container .card p{
+    color: #fff;
+  }
+  .carousel-container button {
+    margin: 0 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  .carousel-container button:disabled {
+    cursor:not-allowed;
+    color: #525252;
+  }
+  
